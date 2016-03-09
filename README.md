@@ -1,2 +1,4 @@
 # personnel-db
-Personell database schema
+
+Information and schema documentation for the LTER personnel database, which
+was originally implemented in MS SQL Server.
