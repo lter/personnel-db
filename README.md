@@ -15,3 +15,7 @@ a web-based interface for making changes and updates to the the data in this sys
 __N.B.__: This is the original LTER personnel database.  A newer version has also
 been started, but was never completed.  
 See the [personnelDB source code](https://github.com/lter/personnelDB/) on GitHub.
+
+## Schema diagram
+The following illustrates the personnel-db schema.
+![Schema diagram.](schema/personnel-db-schema.pdf)
