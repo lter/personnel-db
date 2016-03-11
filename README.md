@@ -18,4 +18,4 @@ See the [personnelDB source code](https://github.com/lter/personnelDB/) on GitHu
 
 ## Schema diagram
 The following illustrates the personnel-db schema.
-![Schema diagram.](schema/personnel-db-schema.pdf?raw=true)
+![Schema diagram.](schema/personnel-db-schema.png?raw=true)
