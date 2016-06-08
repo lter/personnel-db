@@ -88,21 +88,21 @@ while (@data = $cursor2->fetchrow_array()) {
     my $groupid = $data[5];
     my $listemail3 = $data[6];
 
-my @luqids = (39,40,41,42,54,56,237);
+    my @luqids = (39,40,41,42,54,56,237);
 
-if (!$listemail eq '') {
-if ((($groupid == 39) || ($groupid == 40) || ($groupid == 41) || ($groupid == 42) || ($groupid == 54) || ($groupid == 56) || ($groupid == 237)) && ($id == 12575)) {
-print OUT1 $listemail3 . "\n";
-} else {
-        print OUT1 $listemail . "\n";
-    	if ($listemail2 =~ /@/) {
-   		print OUT1 $listemail2 . "\n";
-   	}
-	}
-}
+    if (!$listemail eq '') {
+        #if ((($groupid == 39) || ($groupid == 40) || ($groupid == 41) || ($groupid == 42) || ($groupid == 54) || ($groupid == 56) || ($groupid == 237)) && ($id == 12575)) {
+            #print OUT1 $listemail3 . "\n";
+        #} else {
+            print OUT1 $listemail . "\n";
+            if ($listemail2 =~ /@/) {
+                print OUT1 $listemail2 . "\n";
+            }
+        #}
+    }
 }
 
-    close(OUT1);
+close(OUT1);
 
 my $param = "-a=no -d=no -g=no -w=no -f /var/local/mailman/groups/$listname $listname";
 my $command = "/var/lib/mailman/bin/sync_members $param";
